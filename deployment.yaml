@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  agileDeployment
+  name:  agile-deployment
   namespace: demo
 spec:
   selector:
     matchLabels:
-      app: agileDeployment
+      app: agile-deployment
   template:
     metadata:
       labels:
-        app: agileDeployment
+        app: agile-deployment
     spec:
       containers:
-        - name: agileDeployment
+        - name: agile-deployment
           image: shorol/scrum-dhaka:latest
           imagePullPolicy: Always
           ports:
